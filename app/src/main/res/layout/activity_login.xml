@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+android:layout_gravity="center"
+        android:layout_width="321dp"
+        android:layout_height="162dp"
+        android:src="@drawable/anhdong" />
+
+    <TextView
+        android:layout_marginLeft="10dp"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/docbao"
+        android:textAllCaps="false"
+        android:textColor="@color/docbao"
+        android:textIsSelectable="false"
+        android:textSize="28dp" />
+<TextView
+    android:textColor="@color/docbao"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/bao"
+    android:layout_gravity="center"
+    android:textSize="28dp"/>
+
+
+    <EditText
+
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="builong"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:password="true"
+        android:inputType="textPersonName"
+        android:text="doanxem" />
+
+
+    <Button
+        android:textStyle="bold"
+        android:background="@color/BKG"
+        android:layout_gravity="center"
+        android:id="@+id/btnLogin"
+        android:layout_width="240dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:text="Login" />
+</LinearLayout>
